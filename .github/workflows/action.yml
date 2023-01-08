@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       JOB_ENV: variable disponible para todos los pasos del job
+      WF_ENV: ${{secrets.WF_ENV}}
     steps:
       - name: echo a string
         run: echo "Hello World"
