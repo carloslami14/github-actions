@@ -1,5 +1,9 @@
 {
     "yaml.schemas": {
-        "https://json.schemastore.org/prettierrc.json": "file:///c%3A/_Sources/GithubAction/.github/workflows/action.yml"
+        "https://json.schemastore.org/prettierrc.json": "file:///c%3A/_Sources/GithubAction/.github/workflows/action.yml",
+        "https://json.schemastore.org/github-workflow.json": [
+            "file:///Users/carlos/Documents/_Sources/github-actions/github-actions/.github/workflows/action.yml",
+            "file:///Users/carlos/Documents/_Sources/github-actions/github-actions/.github/workflows/env.yml"
+        ]
     }
 }
