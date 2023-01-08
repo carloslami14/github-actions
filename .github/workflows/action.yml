@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       JOB_ENV: variable disponible para todos los pasos del job
-      WF_ENV: ${{secrets.WF_ENV}}
+      GITHUB_ENV: ${{secrets.WF_ENV}}
     steps:
       - name: echo a string
         run: echo "Hello World"
@@ -25,6 +25,6 @@ jobs:
         env:
           STEP_ENV: variable disponible para solo este paso
         run: |
-          echo "WF_ENV: ${WF_ENV}"
+          echo "GITHUB_ENV: ${GITHUB_ENV}"
           echo "JOB_ENV: ${JOB_ENV}"
           echo "STEP_ENV: ${STEP_ENV}" 
